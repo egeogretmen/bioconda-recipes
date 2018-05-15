@@ -18,10 +18,14 @@ build:
   script: 'python setup.py install '
 
 requirements:
-  host:
+  build:
     - python
   run:
     - python
+
+test:
+  imports:
+    - sexpdata
 
 about:
   home: https://github.com/tkf/sexpdata
